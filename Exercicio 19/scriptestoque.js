@@ -64,7 +64,7 @@ formCadastro.addEventListener("submit", function (event) {
 btnVerEstoque.addEventListener("click", function () {
     // Verifica se o estoque está vazio
     if (estoque.length === 0) {
-        alert("Não há itens no estoque.");
+        alert("Não há itens no carrinho.");
         return;
     }
 
@@ -88,7 +88,7 @@ btnVerEstoque.addEventListener("click", function () {
       <td>${item.preco}</td>
       <td>${item.quantidade}</td>
       <td>${item.dataEntrada}</td>
-      <td><button>Remover do estoque</button></td>
+      <td><button>Remover do carrinho</button></td>
     `;
 
 //criar novo elemtento no html creatElement
@@ -123,6 +123,8 @@ btnVerEstoque.addEventListener("click", function () {
 
     // Mostra a tabela
     tabela.style.display = "table";
+
+    
 });
 
 
